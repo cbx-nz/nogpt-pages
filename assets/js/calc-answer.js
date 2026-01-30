@@ -1,1 +1,1 @@
-const answer = document.getElementById("answer");
+const OutputArea = document.getElementById("output");
