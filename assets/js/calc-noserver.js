@@ -39,4 +39,4 @@ if (firstNumberValue === secondNumberValue) {
     OutputArea.innerHTML = firstNumberValue * secondNumberValue;
 } else {
         OutputArea.innerHTML = "Unknown operator";
-    }}
+    }};
