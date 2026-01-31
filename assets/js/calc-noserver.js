@@ -16,6 +16,10 @@ function handleFormSubmit(event) {
     // operator
     const operatorTextValue = document.getElementById('operator').value;
 
+    const LessCorrect1Message = `Incorrect, ${firstNumberValue} is less than ${secondNumberValue}`;
+    const MoreIncorrect1Message = `Correct, ${firstNumberValue} is more than ${secondNumberValue}`;
+    const LessIncorrect2Message = `Incorrect, ${secondNumberValue} is less than ${firstNumberValue}`;
+    const MoreCorrect2Message = `Correct, ${secondNumberValue} is more than ${firstNumberValue}`
 
 
 if (isNaN(firstNumberValue) || isNaN(secondNumberValue) || operatorTextValue === "") {
@@ -37,6 +41,19 @@ if (firstNumberValue === secondNumberValue) {
     OutputArea.innerHTML = firstNumberValue - secondNumberValue;
 } else if (operatorTextValue === "times") {
     OutputArea.innerHTML = firstNumberValue * secondNumberValue;
-} else {
+} else if (operatorTextValue === ">") {
+if (firstNumberValue > secondNumberValue) {
+    OutputArea.innerHTML = MoreIncorrect1Message;
+} else if (firstNumberValue < secondNumberValue) {
+    OutputArea.innerHTML = LessCorrect1Message;
+}
+} else if (operatorTextValue === "<") {
+if (firstNumberValue < secondNumberValue) {
+    OutputArea.innerHTML = MoreCorrect2Message;
+} else if (firstNumberValue > secondNumberValue) {
+    OutputArea.innerHTML = LessIncorrect2Message;
+}
+}
+ else {
         OutputArea.innerHTML = "Unknown operator";
     }};
