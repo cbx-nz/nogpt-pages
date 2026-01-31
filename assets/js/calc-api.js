@@ -14,7 +14,7 @@ function handleFormSubmit(event) {
 
 const data = {firstNumberValue, secondNumberValue, operatorTextValue}
 
-fetch('http://localhost:3050/api/in', {
+fetch('http://localhost:3050/api/in' || 'http://localhost:3050/api/calc', {
     method: "POST", 
     headers: {
         "Content-Type": "application/json",
