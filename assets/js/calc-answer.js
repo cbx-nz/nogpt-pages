@@ -1,1 +1,0 @@
-const OutputArea = document.getElementById("output");
