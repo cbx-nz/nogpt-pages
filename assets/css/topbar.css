@@ -74,9 +74,17 @@ body {
     color: white;
     font-size: 20px;
     align-items: center;
-    transition: font-size 0.25s ease, color 0.75s ease;
+    transition: font-size 0.25s ease, color 0.75s ease, text-shadow 0.25s ease;
 }
 .nav-links a:hover {
-    color:aqua;
+    color:aquamarine;
     font-size: 23px;
+    text-shadow:
+    0 0 10px aquamarine,
+    0 0 20px aquamarine,
+    0 0 40px aqua,
+    0 0 80px aqua,
+    0 0 90px #0fa,
+    0 0 100px #0fa,
+    0 0 150px #0fa;
 }
