@@ -93,10 +93,10 @@ def start_quiz(event=None):
         {
             "question": "Which symbol is used for comments in Python?",
             "answers": {
-                "A": "//",
-                "B": "<!-- -->",
-                "C": "#",
-                "D": "/* */"
+                "A": "// hey",
+                "B": "< !-- hey --! >",
+                "C": "# hey",
+                "D": "/* hello */"
             },
             "correct": "C",
             "explanation": "# symbol is used for comments in Python"
