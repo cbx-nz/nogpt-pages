@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Quiz</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.2.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
+    <link rel="stylesheet" href="./assets/css/pyweb.css">
+</head>
+
+<body>
+
+<h1>Python Quiz</h1>
+
+<label>
+    Shuffle Questions?
+    <input type="checkbox" id="shuffle">
+</label>
+
+<br><br>
+
+<button py-click="start_quiz">Start Quiz</button>
+
+<hr>
+
+<div id="quiz-area"></div>
+<div id="result"></div>
+
+<script type="py" src="./assets/python/quiz.py" config="./assets/configs/pyquiz.toml"></script>
+
+</body>
+</html>
